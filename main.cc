@@ -1,8 +1,17 @@
 #include <iostream>
+#include "function.hh"
 using namespace std;
 
-int main() 
+extern int nCompletionStatus;
+int main(int argc, char* argv[]) 
 {
-    cout << "Hello, World!" << endl;
+    float x = 1.0;
+    float y = 5.0;
+    float z;
+
+    z = add_and_multiply(x,y);
+    nCompletionStatus = 1;
+    cout << "RESULT IS: " << z << endl;
     return 0;
+
 }
